@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main"
+    "footer footer";
+}
+
+#content {
+  display: flex;
+}
+
+nav,
+main {
+  flex: 1;
+}
+
+header {
+  grid-area: header;
+  padding: 1em;
+  background-color: aquamarine;
+  border-bottom: solid black 2px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav {
+  width: 200px;
+  min-width: 200px;
+  background-color: grey;
+}
+
+main {
+  grid-area: main;
+}
+
+nav li{
+  margin-bottom: 10px;
+}
+
+nav ul {
+  font-size: 20px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: aquamarine;
+}
+
+nav a:visited {
+  color: white;
+}
+
+#main {
+  width: calc(100% - 200px);
+}
+
+#articels>div {
+  width: 200px;
+  height: 350px;
+}
+
+footer {
+  grid-area: footer;
+  margin-bottom: 4rem;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+section#cookieblock {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  line-height: 2rem;
+  background-color: darkgray;
+}
+
+section#cookieblock button {
+  margin: 0 2rem;
+  padding: .5rem;
+}
+
+h3,
+p {
+  color: grey;
+}
+
+h2 {
+  color: lightslategray;
+  margin-left: 20px;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+.test {
+  background-color: aliceblue;
+
+}
+
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  font-family: Helvetica, sans-serif;
+}
+
+.underline {
+  border-bottom: solid black 2px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+blockquote {
+  color: darkgray;
+  padding: .25rem;
+}
+
+article {
+
+  background-color: lightgrey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#articels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+article {
+  box-sizing: border-box;
+  flex-basis: 32%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+article h3 {
+  text-align: left;
+}
+
+article img {
+  align-self: center;
+}
